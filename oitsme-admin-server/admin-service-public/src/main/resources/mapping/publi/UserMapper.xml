@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离 注意：使用mapper代理方法开发，namespace有特殊重要的作用，namespace等于mapper地址 -->
+
+<mapper namespace="com.oitsme.admin.pub.dao.publi.UserMapper">
+<resultMap id="BaseResultMap" type="com.oitsme.admin.fad.pub.model.publi.User">
+    <id column="id" jdbcType="DECIMAL" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="phone_number" jdbcType="VARCHAR" property="phoneNumber" />
+    <result column="employee_code" jdbcType="VARCHAR" property="employeeCode" />
+
+</resultMap>
+    <select id="findUserById" parameterType="int"
+            resultMap="BaseResultMap">
+        SELECT * FROM manage_user WHERE id=#{value}
+    </select>
+    <select id="findUserByUserName" parameterType="String"
+            resultMap="BaseResultMap">
+        SELECT * FROM manage_user WHERE user_name=#{value}
+    </select>
+    <select id="selectAllUsers" resultMap="BaseResultMap">
+        SELECT * FROM manage_user
+    </select>
+
+</mapper>
+
+

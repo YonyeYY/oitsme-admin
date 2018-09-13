@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oitsme.admin.pub.dao.dev.EmployeeMapper">
+  <resultMap id="BaseResultMap" type="com.oitsme.admin.fad.pub.model.dev.Employee">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    <id column="employee_code" jdbcType="VARCHAR" property="employeeCode" />
+    <result column="employee_name" jdbcType="VARCHAR" property="employeeName" />
+    <result column="department_code" jdbcType="VARCHAR" property="departmentCode" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+  </resultMap>
+  <sql id="Condition_Where_Clause">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    <where>
+      <if test="condition.employeeCode != null">
+        and employee_code = #{condition.employeeCode,jdbcType=VARCHAR}
+      </if>
+      <if test="condition.employeeName != null">
+        and employee_name = #{condition.employeeName,jdbcType=VARCHAR}
+      </if>
+      <if test="condition.departmentCode != null">
+        and department_code = #{condition.departmentCode,jdbcType=VARCHAR}
+      </if>
+      <if test="condition.userName != null">
+        and user_name = #{condition.userName,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    employee_code, employee_name, department_code, user_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select 
+    <include refid="Base_Column_List" />
+    from employee
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByUniqueIndexPRIMARY" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select 
+    <include refid="Base_Column_List" />
+    from employee
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    delete from employee
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByUniqueIndexPRIMARY" parameterType="java.lang.String">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    delete from employee
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    insert into employee (employee_code, employee_name, department_code, 
+      user_name)
+    values (#{employeeCode,jdbcType=VARCHAR}, #{employeeName,jdbcType=VARCHAR}, #{departmentCode,jdbcType=VARCHAR}, 
+      #{userName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    insert into employee
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="employeeCode != null">
+        employee_code,
+      </if>
+      <if test="employeeName != null">
+        employee_name,
+      </if>
+      <if test="departmentCode != null">
+        department_code,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="employeeCode != null">
+        #{employeeCode,jdbcType=VARCHAR},
+      </if>
+      <if test="employeeName != null">
+        #{employeeName,jdbcType=VARCHAR},
+      </if>
+      <if test="departmentCode != null">
+        #{departmentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="selectByConditionCount" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee" resultType="java.lang.Long">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select count(*) from employee
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectByCondition" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select
+    <include refid="Base_Column_List" />
+    from employee
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectByConditionPage" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    SELECT * FROM (SELECT m.*, ROWNUM ROW_NUM FROM 
+    ( 
+    select
+    <include refid="Base_Column_List" />
+    
+    from employee
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+    <if test=" page.orderByClause != null">
+       order by #{page.orderByClause} 
+    </if>
+    ) m  
+   WHERE ROWNUM <![CDATA[<=]]> #{page.endWith} ) WHERE ROW_NUM >= #{page.startWith} order by ROW_NUM 
+  </select>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update employee
+    <set>
+      <if test="employeeName != null">
+        employee_name = #{employeeName,jdbcType=VARCHAR},
+      </if>
+      <if test="departmentCode != null">
+        department_code = #{departmentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update employee
+    set employee_name = #{employeeName,jdbcType=VARCHAR},
+      department_code = #{departmentCode,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR}
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByUniqueIndexSelectivePRIMARY" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update employee
+    <set>
+      <if test="employeeName != null">
+        employee_name = #{employeeName,jdbcType=VARCHAR},
+      </if>
+      <if test="departmentCode != null">
+        department_code = #{departmentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByUniqueIndexPRIMARY" parameterType="com.oitsme.admin.fad.pub.model.dev.Employee">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update employee
+    set employee_name = #{employeeName,jdbcType=VARCHAR},
+      department_code = #{departmentCode,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR}
+    where employee_code = #{employeeCode,jdbcType=VARCHAR}
+  </update>
+</mapper>

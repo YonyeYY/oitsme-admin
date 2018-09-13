@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oitsme.admin.pub.dao.dev.ManageUserMapper">
+  <resultMap id="BaseResultMap" type="com.oitsme.admin.fad.pub.model.dev.ManageUser">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="phone_number" jdbcType="VARCHAR" property="phoneNumber" />
+    <result column="employee_code" jdbcType="VARCHAR" property="employeeCode" />
+  </resultMap>
+  <sql id="Condition_Where_Clause">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    <where>
+      <if test="condition.id != null">
+        and id = #{condition.id,jdbcType=INTEGER}
+      </if>
+      <if test="condition.userName != null">
+        and user_name = #{condition.userName,jdbcType=VARCHAR}
+      </if>
+      <if test="condition.password != null">
+        and password = #{condition.password,jdbcType=VARCHAR}
+      </if>
+      <if test="condition.phoneNumber != null">
+        and phone_number = #{condition.phoneNumber,jdbcType=VARCHAR}
+      </if>
+      <if test="condition.employeeCode != null">
+        and employee_code = #{condition.employeeCode,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    id, user_name, password, phone_number, employee_code
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select 
+    <include refid="Base_Column_List" />
+    from manage_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectByUniqueIndexPRIMARY" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select 
+    <include refid="Base_Column_List" />
+    from manage_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    delete from manage_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByUniqueIndexPRIMARY" parameterType="java.lang.Integer">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    delete from manage_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    insert into manage_user (id, user_name, password, 
+      phone_number, employee_code)
+    values (#{id,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{phoneNumber,jdbcType=VARCHAR}, #{employeeCode,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    insert into manage_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="phoneNumber != null">
+        phone_number,
+      </if>
+      <if test="employeeCode != null">
+        employee_code,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneNumber != null">
+        #{phoneNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="employeeCode != null">
+        #{employeeCode,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="selectByConditionCount" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser" resultType="java.lang.Long">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select count(*) from manage_user
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectByCondition" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select
+    <include refid="Base_Column_List" />
+    from manage_user
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectByConditionPage" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    SELECT * FROM (SELECT m.*, ROWNUM ROW_NUM FROM 
+    ( 
+    select
+    <include refid="Base_Column_List" />
+    
+    from manage_user
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+    <if test=" page.orderByClause != null">
+       order by #{page.orderByClause} 
+    </if>
+    ) m  
+   WHERE ROWNUM <![CDATA[<=]]> #{page.endWith} ) WHERE ROW_NUM >= #{page.startWith} order by ROW_NUM 
+  </select>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update manage_user
+    <set>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneNumber != null">
+        phone_number = #{phoneNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="employeeCode != null">
+        employee_code = #{employeeCode,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update manage_user
+    set user_name = #{userName,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      phone_number = #{phoneNumber,jdbcType=VARCHAR},
+      employee_code = #{employeeCode,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByUniqueIndexSelectivePRIMARY" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update manage_user
+    <set>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneNumber != null">
+        phone_number = #{phoneNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="employeeCode != null">
+        employee_code = #{employeeCode,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByUniqueIndexPRIMARY" parameterType="com.oitsme.admin.fad.pub.model.dev.ManageUser">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update manage_user
+    set user_name = #{userName,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      phone_number = #{phoneNumber,jdbcType=VARCHAR},
+      employee_code = #{employeeCode,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

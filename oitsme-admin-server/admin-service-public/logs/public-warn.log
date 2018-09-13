@@ -1,0 +1,273 @@
+[WARN ][20180815 15:54:07,972]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1111] Client session timed out, have not heard from server in 124497ms for sessionid 0x1653b6130590011
+[WARN ][20180815 16:17:51,332]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1288] Unable to reconnect to ZooKeeper service, session 0x1653b6130590011 has expired
+[WARN ][20180815 17:05:14,222]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1111] Client session timed out, have not heard from server in 2021163ms for sessionid 0x1653b6130590015
+[WARN ][20180815 20:02:34,236]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:36,353]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:38,458]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:40,564]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:42,671]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:44,777]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:46,882]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:48,987]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:51,091]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:53,200]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:55,305]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:57,411]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:02:59,524]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:03:01,628]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180815 20:03:03,174]  [] [DubboShutdownHook] [com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient:117]  [DUBBO] Zookeeper is not connected yet!, dubbo version: 2.6.0, current host: 127.0.0.1
+java.lang.IllegalStateException: Zookeeper is not connected yet!
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkClientWrapper.close(ZkClientWrapper.java:123)
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkclientZookeeperClient.doClose(ZkclientZookeeperClient.java:101)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.close(AbstractZookeeperClient.java:115)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.destroy(ZookeeperRegistry.java:102)
+	at com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:71)
+	at com.alibaba.dubbo.config.ProtocolConfig.destroyAll(ProtocolConfig.java:157)
+	at com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:82)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ][20180815 21:06:16,123]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'iUserAPI': Unsatisfied dependency expressed through field 'userBiz'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.oitsme.admin.pub.biz.UserBiz' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[WARN ][20180815 21:06:34,899]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'iUserAPI': Unsatisfied dependency expressed through field 'userBiz'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.oitsme.admin.pub.biz.UserBiz' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[WARN ][20180815 21:07:34,092]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'iUserAPI': Unsatisfied dependency expressed through field 'userBiz'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.oitsme.admin.pub.biz.UserBiz' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[WARN ][20180815 21:07:46,968]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'iUserAPI': Unsatisfied dependency expressed through field 'userBiz'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.oitsme.admin.pub.biz.UserBiz' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[WARN ][20180816 11:53:34,923]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"
+[WARN ][20180816 11:54:21,146]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"
+[WARN ][20180816 13:31:44,220]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"
+[WARN ][20180816 13:33:22,394]  [] [main] [org.springframework.context.support.AbstractApplicationContext:551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'dataSource' defined in class path resource [spring/spring-mybatis.xml]: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jdbc.driver' in value "${jdbc.driver}"
+[WARN ][20180816 16:34:52,397]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1111] Client session timed out, have not heard from server in 24846ms for sessionid 0x16541a367f50006
+[WARN ][20180816 16:59:06,253]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:08,366]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:10,475]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:12,584]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:14,689]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:16,795]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:18,899]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:21,005]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:23,117]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:25,223]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:27,330]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:29,537]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:55,836]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 16:59:57,952]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:00,058]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:02,163]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:04,269]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:06,376]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:08,487]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:10,595]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:12,701]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:14,805]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:16,911]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:19,015]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:21,120]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:23,226]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1165] Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+[WARN ][20180816 17:00:24,675]  [] [DubboShutdownHook] [com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient:117]  [DUBBO] Zookeeper is not connected yet!, dubbo version: 2.6.0, current host: 127.0.0.1
+java.lang.IllegalStateException: Zookeeper is not connected yet!
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkClientWrapper.close(ZkClientWrapper.java:123)
+	at com.alibaba.dubbo.remoting.zookeeper.zkclient.ZkclientZookeeperClient.doClose(ZkclientZookeeperClient.java:101)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.close(AbstractZookeeperClient.java:115)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.destroy(ZookeeperRegistry.java:102)
+	at com.alibaba.dubbo.registry.support.AbstractRegistryFactory.destroyAll(AbstractRegistryFactory.java:71)
+	at com.alibaba.dubbo.config.ProtocolConfig.destroyAll(ProtocolConfig.java:157)
+	at com.alibaba.dubbo.config.AbstractConfig$1.run(AbstractConfig.java:82)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ][20180816 18:53:31,753]  [] [DubboZkclientConnector-SendThread(127.0.0.1:2181)] [org.apache.zookeeper.ClientCnxn$SendThread:1111] Client session timed out, have not heard from server in 5420327ms for sessionid 0x165420886130002

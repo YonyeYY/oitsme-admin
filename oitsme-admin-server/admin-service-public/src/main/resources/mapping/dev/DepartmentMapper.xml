@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oitsme.admin.pub.dao.dev.DepartmentMapper">
+  <resultMap id="BaseResultMap" type="com.oitsme.admin.fad.pub.model.dev.Department">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    <id column="department_code" jdbcType="VARCHAR" property="departmentCode" />
+    <result column="department_name" jdbcType="VARCHAR" property="departmentName" />
+  </resultMap>
+  <sql id="Condition_Where_Clause">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    <where>
+      <if test="condition.departmentCode != null">
+        and department_code = #{condition.departmentCode,jdbcType=VARCHAR}
+      </if>
+      <if test="condition.departmentName != null">
+        and department_name = #{condition.departmentName,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    department_code, department_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select 
+    <include refid="Base_Column_List" />
+    from department
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByUniqueIndexPRIMARY" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select 
+    <include refid="Base_Column_List" />
+    from department
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    delete from department
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByUniqueIndexPRIMARY" parameterType="java.lang.String">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    delete from department
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.oitsme.admin.fad.pub.model.dev.Department">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    insert into department (department_code, department_name)
+    values (#{departmentCode,jdbcType=VARCHAR}, #{departmentName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.oitsme.admin.fad.pub.model.dev.Department">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    insert into department
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="departmentCode != null">
+        department_code,
+      </if>
+      <if test="departmentName != null">
+        department_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="departmentCode != null">
+        #{departmentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="departmentName != null">
+        #{departmentName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="selectByConditionCount" parameterType="com.oitsme.admin.fad.pub.model.dev.Department" resultType="java.lang.Long">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select count(*) from department
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectByCondition" parameterType="com.oitsme.admin.fad.pub.model.dev.Department" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    select
+    <include refid="Base_Column_List" />
+    from department
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+  </select>
+  <select id="selectByConditionPage" resultMap="BaseResultMap">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    SELECT * FROM (SELECT m.*, ROWNUM ROW_NUM FROM 
+    ( 
+    select
+    <include refid="Base_Column_List" />
+    
+    from department
+    <if test="_parameter != null">
+      <include refid="Condition_Where_Clause" />
+    </if>
+    <if test=" page.orderByClause != null">
+       order by #{page.orderByClause} 
+    </if>
+    ) m  
+   WHERE ROWNUM <![CDATA[<=]]> #{page.endWith} ) WHERE ROW_NUM >= #{page.startWith} order by ROW_NUM 
+  </select>
+  <update id="updateByPrimaryKeySelective" parameterType="com.oitsme.admin.fad.pub.model.dev.Department">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update department
+    <set>
+      <if test="departmentName != null">
+        department_name = #{departmentName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.oitsme.admin.fad.pub.model.dev.Department">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update department
+    set department_name = #{departmentName,jdbcType=VARCHAR}
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByUniqueIndexSelectivePRIMARY" parameterType="com.oitsme.admin.fad.pub.model.dev.Department">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update department
+    <set>
+      <if test="departmentName != null">
+        department_name = #{departmentName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByUniqueIndexPRIMARY" parameterType="com.oitsme.admin.fad.pub.model.dev.Department">
+    <!--自动生成[2018-09-10 07:42:48]-->
+    update department
+    set department_name = #{departmentName,jdbcType=VARCHAR}
+    where department_code = #{departmentCode,jdbcType=VARCHAR}
+  </update>
+</mapper>
